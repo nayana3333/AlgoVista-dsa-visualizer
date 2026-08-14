@@ -33,7 +33,7 @@ export function Navbar() {
         </nav>
 
         <a
-          href="https://github.com"
+          href="https://github.com/nayana3333/AlgoVista-dsa-visualizer"
           target="_blank"
           rel="noreferrer"
           className="hidden items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-ink transition-colors hover:bg-surface-2 sm:flex"
