@@ -72,12 +72,13 @@ export function Home() {
             >
               Start Visualizing
             </Link>
-            <a
-              href="#catalog"
+            <button
+              type="button"
+              onClick={() => document.getElementById('catalog')?.scrollIntoView({ behavior: 'smooth' })}
               className="rounded-full border border-border bg-surface px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-surface-2"
             >
               Browse Algorithms
-            </a>
+            </button>
           </motion.div>
 
           <div className="mx-auto mt-16 flex max-w-md items-center justify-center divide-x divide-border">

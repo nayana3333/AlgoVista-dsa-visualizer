@@ -1,12 +1,31 @@
 {
   "name": "algovista",
+  "description": "Interactive visualizer for sorting, graph, dynamic programming, and backtracking algorithms.",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "homepage": "https://nayana3333.github.io/AlgoVista-dsa-visualizer/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nayana3333/AlgoVista-dsa-visualizer.git"
+  },
+  "keywords": [
+    "algorithms",
+    "data-structures",
+    "visualizer",
+    "react",
+    "typescript",
+    "sorting",
+    "graph-algorithms",
+    "dynamic-programming",
+    "backtracking"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -27,6 +46,7 @@
     "postcss": "^8.5.26",
     "tailwindcss": "^4.3.3",
     "typescript": "~6.0.2",
-    "vite": "^8.2.0"
+    "vite": "^8.2.0",
+    "vitest": "^4.1.10"
   }
 }
