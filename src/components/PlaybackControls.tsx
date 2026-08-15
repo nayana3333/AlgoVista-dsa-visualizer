@@ -36,22 +36,29 @@ export function PlaybackControls({
         value={index}
         onChange={(e) => onScrub(Number(e.target.value))}
         disabled={disabled}
+        aria-label="Scrub to step"
         className="h-1.5 w-full cursor-pointer appearance-none rounded-full bg-border accent-primary disabled:opacity-40"
       />
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-2">
-          <Button variant="secondary" onClick={onReset} disabled={disabled} title="Reset">
+          <Button variant="secondary" onClick={onReset} disabled={disabled} title="Reset" aria-label="Reset to start">
             ⟲
           </Button>
-          <Button variant="secondary" onClick={onStepBack} disabled={disabled || index === 0} title="Step back">
+          <Button
+            variant="secondary"
+            onClick={onStepBack}
+            disabled={disabled || index === 0}
+            title="Step back"
+            aria-label="Step back"
+          >
             ◀
           </Button>
           {isPlaying ? (
-            <Button variant="primary" onClick={onPause} disabled={disabled}>
+            <Button variant="primary" onClick={onPause} disabled={disabled} aria-label="Pause">
               ❚❚ Pause
             </Button>
           ) : (
-            <Button variant="primary" onClick={onPlay} disabled={disabled}>
+            <Button variant="primary" onClick={onPlay} disabled={disabled} aria-label="Play">
               ▶ Play
             </Button>
           )}
@@ -60,6 +67,7 @@ export function PlaybackControls({
             onClick={onStepForward}
             disabled={disabled || index >= total - 1}
             title="Step forward"
+            aria-label="Step forward"
           >
             ▶|
           </Button>

@@ -160,12 +160,14 @@ export function KnapsackPage() {
                     <input
                       value={it.name}
                       onChange={(e) => updateItem(it.id, { name: e.target.value })}
+                      aria-label="Item name"
                       className="w-24 bg-transparent text-sm font-medium text-ink outline-none"
                     />
                     <button
                       onClick={() => removeItem(it.id)}
                       className="text-xs text-muted hover:text-danger"
                       disabled={items.length <= 1}
+                      aria-label={`Remove ${it.name}`}
                     >
                       ✕
                     </button>
