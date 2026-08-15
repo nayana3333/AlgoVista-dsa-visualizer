@@ -48,10 +48,3 @@ export function QueenGlyph(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
-
-export const GLYPHS: Record<string, (props: SVGProps<SVGSVGElement>) => React.ReactElement> = {
-  sort: SortGlyph,
-  graph: GraphGlyph,
-  grid: GridGlyph,
-  queen: QueenGlyph,
-};

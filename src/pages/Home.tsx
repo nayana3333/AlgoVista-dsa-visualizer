@@ -1,7 +1,15 @@
+import type { SVGProps } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CATALOG } from '../data/catalog';
-import { GLYPHS } from '../components/Icons';
+import { SortGlyph, GraphGlyph, GridGlyph, QueenGlyph } from '../components/Icons';
+
+const GLYPHS: Record<string, (props: SVGProps<SVGSVGElement>) => React.ReactElement> = {
+  sort: SortGlyph,
+  graph: GraphGlyph,
+  grid: GridGlyph,
+  queen: QueenGlyph,
+};
 
 const STATS = [
   { value: '11', label: 'Algorithms' },

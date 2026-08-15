@@ -1,0 +1,70 @@
+<svg viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="0/1 Knapsack visualizer: the completed dynamic programming table with the optimal value highlighted, and the traced-back chosen items below">
+  <rect width="900" height="560" fill="#fbf4ee"/>
+
+  <text x="40" y="52" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#362a26">0/1 Knapsack</text>
+  <text x="40" y="78" font-family="system-ui, sans-serif" font-size="14" fill="#725f57">Dynamic programming — watch the table fill, then trace back the optimal set.</text>
+
+  <!-- table panel -->
+  <rect x="40" y="108" width="820" height="230" rx="18" fill="#fffbf8" stroke="#ecdcd3" stroke-width="1.5"/>
+
+  <!-- header row -->
+  <g font-family="ui-monospace, monospace" font-size="12" fill="#725f57" text-anchor="middle">
+    <text x="118" y="140">item \ w</text>
+    <text x="192" y="140">0</text><text x="238" y="140">1</text><text x="284" y="140">2</text>
+    <text x="330" y="140">3</text><text x="376" y="140">4</text><text x="422" y="140">5</text>
+    <text x="468" y="140">6</text><text x="514" y="140">7</text><text x="560" y="140">8</text>
+    <text x="606" y="140">9</text><text x="656" y="140">10</text>
+  </g>
+
+  <!-- rows of values -->
+  <g font-family="ui-monospace, monospace" font-size="13" fill="#362a26" text-anchor="middle">
+    <text x="80" y="164" text-anchor="start" fill="#725f57">&#8709;</text>
+    <text x="192" y="164">0</text><text x="238" y="164">0</text><text x="284" y="164">0</text><text x="330" y="164">0</text><text x="376" y="164">0</text><text x="422" y="164">0</text><text x="468" y="164">0</text><text x="514" y="164">0</text><text x="560" y="164">0</text><text x="606" y="164">0</text><text x="656" y="164">0</text>
+
+    <text x="80" y="192" text-anchor="start" fill="#725f57">Item 1</text>
+    <text x="192" y="192">0</text><text x="238" y="192">0</text><text x="284" y="192">3</text><text x="330" y="192">3</text><text x="376" y="192">3</text><text x="422" y="192">3</text><text x="468" y="192">3</text><text x="514" y="192">3</text><text x="560" y="192">3</text><text x="606" y="192">3</text><text x="656" y="192">3</text>
+
+    <text x="80" y="220" text-anchor="start" fill="#725f57">Item 2</text>
+    <text x="192" y="220">0</text><text x="238" y="220">0</text><text x="284" y="220">3</text><text x="330" y="220">4</text><text x="376" y="220">4</text><text x="422" y="220">7</text><text x="468" y="220">7</text><text x="514" y="220">7</text><text x="560" y="220">7</text><text x="606" y="220">7</text><text x="656" y="220">7</text>
+
+    <text x="80" y="248" text-anchor="start" fill="#725f57">Item 3</text>
+    <text x="192" y="248">0</text><text x="238" y="248">0</text><text x="284" y="248">3</text><text x="330" y="248">4</text><text x="376" y="248">5</text><text x="422" y="248">7</text><text x="468" y="248">8</text><text x="514" y="248">9</text><text x="560" y="248">9</text><text x="606" y="248">12</text><text x="656" y="248">12</text>
+
+    <text x="80" y="276" text-anchor="start" fill="#725f57">Item 4</text>
+    <text x="192" y="276">0</text><text x="238" y="276">0</text><text x="284" y="276">3</text><text x="330" y="276">4</text><text x="376" y="276">5</text><text x="422" y="276">8</text><text x="468" y="276">8</text><text x="514" y="276">11</text><text x="560" y="276">12</text><text x="606" y="276">13</text>
+  </g>
+
+  <!-- highlighted final cell -->
+  <rect x="634" y="258" width="46" height="26" rx="6" fill="#b04f6f"/>
+  <text x="656" y="276" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#fffbf8" text-anchor="middle">15</text>
+
+  <!-- stat pills -->
+  <g font-family="ui-monospace, monospace" font-size="18" font-weight="700" text-anchor="middle">
+    <g transform="translate(40,364)">
+      <rect width="180" height="64" rx="12" fill="#f9ede6" stroke="#ecdcd3"/>
+      <text x="90" y="26" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#725f57">Optimal value</text>
+      <text x="90" y="50" fill="#b04f6f">15</text>
+    </g>
+    <g transform="translate(240,364)">
+      <rect width="180" height="64" rx="12" fill="#f9ede6" stroke="#ecdcd3"/>
+      <text x="90" y="26" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#725f57">Selected weight</text>
+      <text x="90" y="50" fill="#4f7d72">10/10</text>
+    </g>
+    <g transform="translate(440,364)">
+      <rect width="180" height="64" rx="12" fill="#f9ede6" stroke="#ecdcd3"/>
+      <text x="90" y="26" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#725f57">Items chosen</text>
+      <text x="90" y="50" fill="#362a26">3</text>
+    </g>
+  </g>
+
+  <!-- chosen items -->
+  <text x="40" y="464" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#362a26">Chosen items</text>
+  <g font-family="ui-monospace, monospace" font-size="13" fill="#2f5148">
+    <rect x="40" y="480" width="150" height="32" rx="16" fill="#e8f4f0" stroke="#437a52" stroke-opacity="0.4"/>
+    <text x="115" y="501" text-anchor="middle">Item 1 (w2, v3)</text>
+    <rect x="204" y="480" width="150" height="32" rx="16" fill="#e8f4f0" stroke="#437a52" stroke-opacity="0.4"/>
+    <text x="279" y="501" text-anchor="middle">Item 2 (w3, v4)</text>
+    <rect x="368" y="480" width="150" height="32" rx="16" fill="#e8f4f0" stroke="#437a52" stroke-opacity="0.4"/>
+    <text x="443" y="501" text-anchor="middle">Item 4 (w5, v8)</text>
+  </g>
+</svg>
