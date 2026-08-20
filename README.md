@@ -5,7 +5,6 @@
 <br/>
 
 [![CI](https://github.com/nayana3333/AlgoVista-dsa-visualizer/actions/workflows/ci.yml/badge.svg)](https://github.com/nayana3333/AlgoVista-dsa-visualizer/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-b04f6f?labelColor=fffbf8)](LICENSE)
 [![React](https://img.shields.io/badge/React-19-4f7d72?labelColor=fffbf8)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-b25a35?labelColor=fffbf8)](https://www.typescriptlang.org)
 [![Tests](https://img.shields.io/badge/tests-57%20passing-4f7d72?labelColor=fffbf8)](src/algorithms)
@@ -33,7 +32,6 @@ It covers four algorithmic paradigms end to end — **sorting, graph theory, dyn
 - [Complexity reference](#complexity-reference)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Preview
 
@@ -200,7 +198,3 @@ src/
 ## Contributing
 
 Issues and pull requests are welcome. For anything non-trivial, please open an issue first to discuss the change — for a small, algorithm-focused codebase like this one, keeping the generator-function pattern consistent matters more than adding features fast.
-
-## License
-
-[MIT](LICENSE) © Nayana
